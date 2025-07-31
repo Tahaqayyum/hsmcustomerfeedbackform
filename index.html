@@ -1,160 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Customer Feedback Form</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
-      padding: 40px;
-      margin: 0px;
-      padding: 0px;
-    }
-
-    .feedback-form {
-      max-width: 600px;
-      margin: auto;
-      background: #ffff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .feedback-form h1, h2 , p{
-      margin-bottom: 20px;
-      color: #333;
-      text-align: center;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #444;
-    }
-
-    input[type="text"],
-    input[type="number"],
-    select,
-    textarea {
-      width: 100%;
-      padding: 10px 14px;
-      border: 1px solid #ccc;
-      /* border-radius: 8px; */
-      font-size: 15px;
-      background: #f9f9f9;
-    }
-
-    textarea {
-      resize: vertical;
-    }
-
-    .rating-stars {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-    }
-
-    .rating-stars input {
-      display: none;
-    }
-
-    .rating-stars label {
-      font-size: 30px;
-      padding: 5px;
-      color: #ccc;
-      cursor: pointer;
-      transition: color 0.2s;
-    }
-
-    .rating-stars input:checked ~ label,
-    .rating-stars label:hover,
-    .rating-stars label:hover ~ label {
-      color: gold;
-    }
-
-    .submit-btn {
-      background-color: #b62026;
-      color: white;
-      padding: 12px 20px;
-      font-size: 16px;
-      border: none;
-      /* border-radius: 8px; */
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .submit-btn:hover {
-      background-color: #000000;
-    }
-    .footer{
-        text-align: center;
-        background-color: #b62026;
-        color: #ffff;
-        padding: 15px;
-        margin-top: 50px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSM-Customer Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="Header">
+            <img src="./images/logo.png" alt="">
+            <h1>Customer Feedback Form</h1>
+            <p>"From Our Store to Your Door - How Did We Do?"</p>
+        </div>
+        <div class="Form">
+                 <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-  <form class="feedback-form">
-    <h1>Hydri Super Market</h1>
-    <h2>Customer Feedback</h2>
-    <p>Your Feedback Helps Us Grow!, Help Us Improve! Share Your Feedback. <br> We Value Your Input!. </p>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>     
+        </div>
+        <section>
+            <h1>Develop By Taha Qayyum</h1>
+        </section>
+  
+
+
+
+
     </div>
-
-    <div class="form-group">
-      <label for="orderId">Order ID</label>
-      <input type="text" id="orderId" name="orderId" placeholder="Enter your order ID" required>
-    </div>
-
-    <div class="form-group">
-      <label for="number">Phone Number</label>
-      <input type="number" id="number" name="number" placeholder="Enter your phone number" required>
-    </div>
-
-    <div class="form-group">
-      <label for="category">Category</label>
-      <select id="category" name="category" required>
-        <option value="">-- Select Category --</option>
-        <option value="feedback">Feedback</option>
-        <option value="delivery">Delivery Service</option>
-        <option value="complaint">Complaint</option>
-        <option value="rider_behavior">Rider Behavior</option>
-        <option value="product_not_found">Product Not Found</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="riderRating">Rider Behavior Rating</label>
-      <div class="rating-stars">
-        <input type="radio" id="star5" name="riderRating" value="5"><label for="star5">&#9733;</label>
-        <input type="radio" id="star4" name="riderRating" value="4"><label for="star4">&#9733;</label>
-        <input type="radio" id="star3" name="riderRating" value="3"><label for="star3">&#9733;</label>
-        <input type="radio" id="star2" name="riderRating" value="2"><label for="star2">&#9733;</label>
-        <input type="radio" id="star1" name="riderRating" value="1"><label for="star1">&#9733;</label>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label for="message">Additional Comments</label>
-      <textarea id="message" name="message" rows="4" placeholder="Write your feedback here..."></textarea>
-    </div>
-
-    <button type="submit" class="submit-btn">Submit Feedback</button>
-  </form>
-  <div class="footer">
-    <b>Developed By: Taha Abdul Qayyum Khan</b>
-  </div>
 </body>
 </html>

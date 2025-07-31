@@ -1,0 +1,146 @@
+@font-face {
+    font-family: NexaBold;
+    src: url(./Fonts/NexaBold.otf);
+}
+
+@font-face {
+    font-family: Nexalight;
+    src: url(./Fonts/NexaLight.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Header img{
+    margin-top: 50px;
+}
+.Header h1{
+    font-family: Nexabold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.Header p{
+    font-family: Nexalight;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 30px; 
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Nexalight;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #b51f24;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-family: Nexabold;
+  font-size: 0.890rem;
+  text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+section {
+    background-color: #b51f24;
+    color: #ffff;
+    font-family: Nexabold;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+@media (max-width:660px) {
+    .Header h1{
+    font-family: Nexabold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.Header p{
+    font-family: Nexalight;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+    .Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 30px; 
+}
+}
+@media (max-width:540px) {
+    .Header h1{
+    font-family: Nexabold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.Header p{
+    font-family: Nexalight;
+    font-size: 0.890rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+    .Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 30px; 
+}
+}
