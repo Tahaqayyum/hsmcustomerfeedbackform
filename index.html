@@ -14,25 +14,33 @@
             <p>"From Our Store to Your Door - How Did We Do?"</p>
         </div>
         <div class="Form">
-                 <form action="/action_page.php">
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="94c3a304-0afe-4ce6-9bea-f0d50d66fe7b">
+
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    <label for="contact">Nature of Contact</label>
+    <select id="contact" name="contact">
+      <option value="feedback">Select Option</option>
+      <option value="feedback">Feedback</option>
+      <option value="complaint">Complaint</option>
+      <option value="delivery">Delivery Services</option>
+      <option value="product">Request a product</option>
     </select>
+
+    <label for=""></label>
+    <textarea name="text" id="" placeholder="Enter your message here" maxlength="300"></textarea>
   
     <input type="submit" value="Submit">
   </form>     
         </div>
         <section>
-            <h1>Develop By Taha Qayyum</h1>
+            <h1>Develop By: Taha Qayyum</h1>
         </section>
   
 

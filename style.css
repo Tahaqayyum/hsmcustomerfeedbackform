@@ -49,9 +49,10 @@ body{
     max-width: 600px;
     margin: auto;
     padding: 25px;
-    margin-top: 30px; 
+    margin-top: 30px;
+    font-family: Nexalight;
 }
-input[type=text], select {
+input[type=text], select, textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -72,6 +73,7 @@ input[type=submit] {
   font-family: Nexabold;
   font-size: 0.890rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 input[type=submit]:hover {
@@ -86,6 +88,7 @@ section {
     height: 50px;
     line-height: 50px;
     margin-top: 50px;
+    font-size: 0.990rem;
 }
 
 @media (max-width:660px) {
@@ -102,6 +105,7 @@ section {
     font-size: 1rem;
     letter-spacing: 2px;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -130,6 +134,7 @@ section {
     font-size: 0.890rem;
     letter-spacing: 2px;
     font-weight: bold;
+    text-align: center;
 }
 
 
